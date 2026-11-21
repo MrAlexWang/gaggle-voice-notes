@@ -6,11 +6,11 @@
 Record it, transcribe it offline, search any sentence, and jump straight back to that moment in the audio.
 No account, no cloud, no subscription — and the AI runs on your own machine.
 
-[![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/ci.yml)
+[![CI](https://github.com/MrAlexWang/gaggle-voice-notes/actions/workflows/ci.yml/badge.svg)](https://github.com/MrAlexWang/gaggle-voice-notes/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-2f6f6a.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20%7C%20Android-2f6f6a.svg)](#platform-support)
-[![Downloads](https://img.shields.io/github/downloads/OWNER/REPO/total.svg)](https://github.com/OWNER/REPO/releases)
-[![Stars](https://img.shields.io/github/stars/OWNER/REPO?style=flat)](https://github.com/OWNER/REPO/stargazers)
+[![Downloads](https://img.shields.io/github/downloads/MrAlexWang/gaggle-voice-notes/total.svg)](https://github.com/MrAlexWang/gaggle-voice-notes/releases)
+[![Stars](https://img.shields.io/github/stars/MrAlexWang/gaggle-voice-notes?style=flat)](https://github.com/MrAlexWang/gaggle-voice-notes/stargazers)
 
 [Download](#download) · [Build from source](#build-from-source) · [AI setup](#ai-setup-optional) · [Docs](#documentation) · [中文说明](#中文说明)
 
@@ -53,7 +53,7 @@ Most "AI meeting notes" tools take your audio to someone else's server and charg
 | Windows 10/11 (x64) | `Gaggle-x.y.z-Setup.exe` | Inno Setup installer, installs per-user (no admin required) |
 | Android 8.0+ (arm64) | `Gaggle-x.y.z-android.apk` | Enable "install unknown apps" for your file manager |
 
-Grab them from the [Releases page](https://github.com/OWNER/REPO/releases).
+Grab them from the [Releases page](https://github.com/MrAlexWang/gaggle-voice-notes/releases).
 
 ### First run: two things to know
 
@@ -85,7 +85,7 @@ Prerequisites:
 - Python 3.10+ (only for the optional A2A server under `tools/`)
 
 ```powershell
-git clone https://github.com/OWNER/REPO.git
+git clone https://github.com/MrAlexWang/gaggle-voice-notes.git
 cd REPO\app
 flutter pub get
 flutter run -d windows          # 或 flutter build windows --release

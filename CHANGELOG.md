@@ -29,5 +29,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 首次转写前需手动下载模型（约 190MB 起）。
 - 系统声音与麦克风双轨录音尚未实现（P1）。
 
-[Unreleased]: https://github.com/OWNER/REPO/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/OWNER/REPO/releases/tag/v0.1.0
+[Unreleased]: https://github.com/MrAlexWang/gaggle-voice-notes/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/MrAlexWang/gaggle-voice-notes/releases/tag/v0.1.0

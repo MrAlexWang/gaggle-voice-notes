@@ -13,7 +13,7 @@ Only the latest release receives security fixes. Pre-1.0 versions are supported 
 **Please do not open a public issue for security problems.**
 
 Use GitHub's private reporting channel: **Security** tab → **Report a vulnerability**
-(<https://github.com/OWNER/REPO/security/advisories/new>).
+(<https://github.com/MrAlexWang/gaggle-voice-notes/security/advisories/new>).
 
 If that is unavailable, email **MAINTAINER_EMAIL** with:
 

@@ -21,7 +21,7 @@ Thanks for taking the time to contribute. This file covers the practical bits: h
 ## 2. Development setup
 
 ```powershell
-git clone https://github.com/OWNER/REPO.git
+git clone https://github.com/MrAlexWang/gaggle-voice-notes.git
 cd REPO\app
 flutter pub get
 flutter run -d windows
