@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 提问 / 使用问题
+    url: https://github.com/OWNER/REPO/discussions
+    about: 不确定是不是 bug、想聊用法，请到 Discussions，不要开 issue
+  - name: 安全问题
+    url: https://github.com/OWNER/REPO/security/advisories/new
+    about: 漏洞请走私密渠道，不要开公开 issue

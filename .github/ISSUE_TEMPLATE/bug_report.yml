@@ -1,0 +1,67 @@
+name: Bug report
+description: 报告一个可复现的问题（Record a reproducible bug）
+title: "[bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请尽量填全，尤其是**版本号**和**复现步骤**。
+        安全相关的问题请不要在这里发，见 [SECURITY.md](../blob/main/SECURITY.md)。
+  - type: input
+    id: version
+    attributes:
+      label: 版本 Version
+      description: 软件版本号，或 commit hash
+      placeholder: "0.1.0 / a1b2c3d"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台 Platform
+      options:
+        - Windows 10
+        - Windows 11
+        - Android
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 Steps to reproduce
+      placeholder: |
+        1. 打开设置 → 模型，下载 small 模型
+        2. 按快捷键录音 30 秒
+        3. 点击「转写」
+        4. 卡在 0%
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果 Expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果 Actual
+      description: 有截图更快。报错弹窗请把文字贴上来。
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志 Logs
+      description: 数据目录下的 `logs/`，或控制台输出。**请勿粘贴 API Key 或真实录音内容。**
+      render: shell
+    validations:
+      required: false
+  - type: input
+    id: model
+    attributes:
+      label: 使用的模型 / AI 来源
+      placeholder: "ggml-small-q5_1 / Ollama qwen2.5:3b / 未配置"
+    validations:
+      required: false

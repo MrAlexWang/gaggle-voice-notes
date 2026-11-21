@@ -1,0 +1,8 @@
+{
+  "base_url": "http://127.0.0.1:11434/v1",
+  "api_key": "ollama",
+  "model": "qwen2.5:3b",
+  "temperature": 0.3,
+  "max_tokens": 1200,
+  "port": 9999
+}

@@ -1,0 +1,31 @@
+# 统一换行：文本一律入库为 LF，检出时按平台处理
+* text=auto eol=lf
+
+# Windows 脚本必须 CRLF，否则双击运行或 cmd 解析可能出错
+*.ps1  text eol=crlf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# 二进制：禁止任何换行转换与文本 diff
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.exe    binary
+*.dll    binary
+*.lib    binary
+*.pdb    binary
+*.apk    binary
+*.zip    binary
+*.7z     binary
+*.bin    binary
+*.onnx   binary
+*.db     binary
+
+# 语言识别：文档不计入语言统计，避免仓库显示成 Markdown 项目
+docs/**/*.md   linguist-documentation
+prototype/**   linguist-documentation
+
+# 锁文件折叠在 GitHub 的 diff 里
+pubspec.lock   linguist-generated
