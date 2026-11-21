@@ -108,8 +108,18 @@ function Invoke-Tool {
         Write-Host "     DRY $shown" -ForegroundColor DarkGray
         return [pscustomobject]@{ ExitCode = 0; Output = ''; Shown = $shown }
     }
-    $out = & $Exe @Arguments 2>&1
-    $code = $LASTEXITCODE
+    # 注意：git 会把进度/提示写到 stderr，PS 5.1 在 Stop 策略下会把重定向后的
+    # stderr 当成终止错误（例如 "Everything up-to-date"），所以这里临时降级。
+    $prevEap = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        $out = & $Exe @Arguments 2>&1
+        $code = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $prevEap
+    }
+    if ($null -eq $code) { $code = 0 }
     if ($out -and -not $Quiet) {
         $out | ForEach-Object { Write-Host "         $_" -ForegroundColor DarkGray }
     }
